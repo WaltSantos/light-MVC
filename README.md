@@ -15,7 +15,7 @@ This framework does not require heavy dependencies like Laravel or Symfony.
 - Highly customizable
 
 ## File Structure
-`project-root/
+project-root/
 ├── app/
 │   ├── Controllers/
 │   ├── Models/
@@ -31,7 +31,7 @@ This framework does not require heavy dependencies like Laravel or Symfony.
 │   └── web.php
 ├── vendor/
 ├── composer.json
-└── README.md`
+└── README.md
 
 ## Execution Flow
 1. A request hits `public/index.php`
