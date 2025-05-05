@@ -54,17 +54,17 @@ sudo systemctl restart apache2
 ```
 
 ## Configuration
-	1.	Routes:
+1. Routes:
 Routes are declared manually inside /routes/:
-	•	web.php: browser-accessible routes
-	•	api.php: REST API endpoints
-	•	internal_api.php: internal use routes (optional)
-	2.	Controllers:
+- web.php: browser-accessible routes
+- api.php: REST API endpoints
+- internal_api.php: internal use routes (optional)
+2. Controllers:
 Place your logic in /app/Controllers. Each route maps to a method in one of these classes.
-	3.	Views:
+3. Views:
 Place visual templates (HTML or PHP) inside /app/Views.
-	4.	Database (optional):
-Use /app/Database.php for DB connection logic.
+4. Database (optional):
+Use `/app/Database.php` for DB connection logic.
 
 
 ## License
