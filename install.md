@@ -14,18 +14,28 @@ To set up the project:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-user/light-mvc.git my-project
+git clone https://github.com/WaltSantos/light-MVC.git my-project
 cd my-project
 ```
 
-### 2. Install dependencies via Composer
+### 2. Rename PROYECTO="proyect-name"
+
+### 3. Run the start script 
 ```bash
+chmod +x start.sh
+bash start 
+```
+This will create the folder and files structure. 
+
+### 4. Install dependencies via Composer
+```bash
+cd proyect-name
 composer install
 ```
 
 Ensure you have Composer installed. If not, see getcomposer.org.
 
-### 3. Set up the Apache virtual host
+### 5. Set up the Apache virtual host
 
 Make sure your Apache server is configured with a virtual host pointing to the /public directory.
 
@@ -47,7 +57,7 @@ And add the domain to your /etc/hosts:
 127.0.0.1 lightmvc.local
 ```
 
-### 4. Enable mod_rewrite (if not already enabled)
+### 6. Enable mod_rewrite (if not already enabled)
 ```bash
 sudo a2enmod rewrite
 sudo systemctl restart apache2
