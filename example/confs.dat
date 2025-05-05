@@ -1,0 +1,23 @@
+# Instrucciones para configurar Apache (httpd.conf):
+
+# 1. Asegúrate de tener habilitado mod_rewrite:
+LoadModule rewrite_module modules/mod_rewrite.so
+
+# 2. Permite el uso de .htaccess en tu VirtualHost:
+<Directory "/ruta/completa/a/proyecto2/public">
+    AllowOverride All
+    Require all granted
+</Directory>
+
+# 3. Configura tu DocumentRoot:
+<VirtualHost *:80>
+    ServerName proyecto2.local
+    DocumentRoot "/ruta/completa/a/proyecto2/public"
+    <Directory "/ruta/completa/a/proyecto2/public">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+# 4. No olvides reiniciar Apache después:
+# sudo systemctl restart apache2

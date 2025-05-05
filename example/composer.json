@@ -1,0 +1,10 @@
+{
+  "name": "usuario/proyecto2",
+  "description": "Proyecto PHP sin framework",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Controllers\\": "app/Controllers/"
+    }
+  }
+}
