@@ -66,6 +66,12 @@ project-root/
 ## Target Users
 
 This framework is a minimalist alternative for building fast and maintainable PHP systems. It’s ideal for developers who want to deploy lightweight and easy-to-manage PHP applications without the overhead of full-stack frameworks.
+This framework is ideal for developers who want:
+	•	Full control over routing and logic
+	•	Lightweight alternatives to full-stack frameworks
+	•	Rapid prototyping or internal tools
+	•	Systems easy to maintain and scale gradually
+ 
 
 ## Example Usage
 
