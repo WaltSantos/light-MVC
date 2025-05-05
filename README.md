@@ -1,4 +1,5 @@
 # light-MVC
+
 An ultralight MVC-like PHP framework
 
 This is a basic and ultralight PHP framework following an MVC-like structure, where routes are defined in plain PHP files. Controllers handle the logic, and views are represented as simple PHP or HTML files. Functionalities are encapsulated as controllers and implemented under an easy-to-understand routing logic defined in `index.php`.
@@ -6,6 +7,7 @@ This is a basic and ultralight PHP framework following an MVC-like structure, wh
 This framework does not require heavy dependencies like Laravel or Symfony.
 
 ## Key Aspects
+
 - Manual routing
 - Routes grouped by type: `web`, `api`, and `internal_api`
 - Clear separation between views and controllers
@@ -15,6 +17,7 @@ This framework does not require heavy dependencies like Laravel or Symfony.
 - Highly customizable
 
 ## File Structure
+
 project-root/
 ├── app/
 │   ├── Controllers/
@@ -34,6 +37,7 @@ project-root/
 └── README.md
 
 ## Execution Flow
+
 1. A request hits `public/index.php`
 2. The URL is parsed and matched against the defined routes
 3. If a match is found, the corresponding controller method is executed
@@ -41,21 +45,25 @@ project-root/
 5. If the route is not found, a custom error view is rendered
 
 ## Security and Access
+
 - `.htaccess` is used to protect sensitive files
 - Authentication middleware can be implemented in `index.php` or handled via a controller
 - Access levels can be managed using session-based roles or tokens
 
 ## Requirements
+
 - PHP 8.0+
 - Composer
 - Apache server with `mod_rewrite` enabled
 
 ## Target Users
+
 This framework is a minimalist alternative for building fast and maintainable PHP systems. It’s ideal for developers who want to deploy lightweight and easy-to-manage PHP applications without the overhead of full-stack frameworks.
 
 ## Example Usage
 
 ### Route Definition (`routes/web.php`)
+
 ```php
 use Controllers\HomeController;
 use Controllers\ErrorController;
@@ -71,6 +79,7 @@ return [
 ```
 
 ### Controller Example (app/Controllers/HomeController.php)
+
 ```
 namespace Controllers;
 
@@ -82,6 +91,7 @@ class HomeController {
 ```
 
 ### View Example (app/Views/home.php)
+
 ```
 <!DOCTYPE html>
 <html>
@@ -95,6 +105,7 @@ class HomeController {
 ```
 
 ### Error Controller (app/Controllers/ErrorController.php)
+
 ```
 namespace Controllers;
 
